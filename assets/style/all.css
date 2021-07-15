@@ -441,7 +441,7 @@ footer {
           display: none; } }
 
 .banner {
-  background: url(/assets/images/banner.png);
+  background: url(assets/images/banner.png);
   height: 840px;
   background-size: cover;
   background-repeat: no-repeat;
