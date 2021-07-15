@@ -1,0 +1,41 @@
+.shop{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 304px;
+    @include laptop {
+        display: block;
+        margin-bottom: 104px;
+    }
+    @include mobileL{
+        margin-bottom: 56px;
+    }
+    .shopDetail{
+        width: 40.09%;
+        @include laptop{
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 32px;
+        }
+        @include mobileL{
+            display: block;
+            margin-bottom: 12px;
+        }
+        .locateImg{
+            @include laptop{
+                width: 47.8261%;
+            }
+            @include mobileL{
+                width: 100%;
+            }
+        }   
+    }
+    .map{
+        width: 57.2072%;
+        height: 422px;
+        object-fit: cover;
+        @include laptop{
+            width: 100%;
+        }
+    }
+}

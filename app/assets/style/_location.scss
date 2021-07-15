@@ -1,0 +1,187 @@
+.pageBanner{
+    background-image: url(/assets/images/qa.png);
+    background-position: center center;
+    background-size: cover;
+    height: 304px;
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+    @include mobileL{
+        height: 143px;
+    }
+    .pageBannerContent{
+        display: flex;
+        align-items: center;
+        font-size: 64px;
+        font-weight: bold;
+        line-height: 80px;
+        @include laptop{
+            font-size: 48px;
+            line-height: 67px;
+        }
+        @include mobileL{
+            font-size: 28px;
+            line-height: 40px;
+        }
+        img{
+            width: 40px;
+            height: 58px;
+            margin-left: 24px;
+            @include laptop{
+                margin-left: 16px;
+                width: 30.5px;
+                height: 44px;
+            }
+            @include mobileL{
+                margin-left: 8px;
+                width: 17px;
+                height: 24px;
+            }
+        }
+    }
+}
+
+.area{
+    font-size: 24px;
+    line-height: 30px;
+    margin-top: 16px;
+    margin-bottom: 32px;
+    @include laptop {
+        font-size: 16px;
+        margin-bottom: 24px;
+    }
+    @include mobileL{
+        font-size: 14px;
+        margin-bottom: 20px;
+        margin-top: 8px;
+    }
+    label{
+        margin-right: 20px;
+        vertical-align: middle;
+        @include mobileL{
+            margin-right: 12px;
+        }
+    }
+    select{
+        height: 45px;
+        border: 1px solid #CED4DA;
+        width: 324px;
+        vertical-align: middle;
+        padding: 0 13px ;
+        font-size: 18px;
+        line-height: 24px;
+        color: #495057;
+        opacity: 0.75;
+        @include laptop {
+            font-size: 16px;
+        }
+        @include mobileL{
+            font-size: 14px;
+        }
+    }
+    
+}
+.locationList{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 274px;
+    @include laptop{
+        justify-content: space-between;
+        margin-bottom: 84px;
+    }
+    @include mobileL{
+        margin-bottom: 40px;
+    }
+    li{
+        width: 30%;
+        margin: 0 15px ;
+        margin-bottom: 32px;
+        @include laptop{
+            width: 47.8261%;
+            margin: 0;
+            margin-bottom: 20px;
+        }
+        @include mobileL{
+            width: 100%;   
+            margin-bottom: 16px; 
+        }
+        &:nth-child(3n+1)
+        {
+            margin-left: 0;
+            
+        }
+        &:nth-child(3n)
+        {
+            margin-right: 0;
+        }
+    }   
+}
+.locateImg{
+    width: 100%;
+    height: 224px;
+    object-fit: cover;
+    @include laptop{
+        height: 164px;
+    }
+}
+.shopName{ 
+    padding: 11px 29px 11px 24px ;
+    font-size: 24px;  
+    font-weight: bold;  
+    color: #212529;
+    border: 1px solid #00000020;
+    @include laptop {
+        font-size: 16px;   
+        padding: 8px 29px 8px 16px ;
+    }
+}
+.company{
+    border: 1px solid #00000020;
+    border-top: none;
+    padding: 16px 29px 8px 24px;
+    @include laptop{
+        padding-left: 16px;
+        font-size: 14px;
+    }
+    .companyItem{
+        display: flex;
+        align-items: center;
+        color: #212529;
+        margin-bottom: 8px;
+        font-size: 20px;
+        font-weight: bold;
+        @include laptop{
+            font-size: 14px;
+        }
+        a{
+            color: #212529;
+        }
+        .icon-black{
+            width: 21px;
+            height: 21px;
+            margin-right: 12px;
+            @include laptop{
+                width: 20px;
+                height: 20px;
+                margin-right: 16px;
+            }
+        }
+    }
+}
+.detail{
+    background-color: #000000;
+    color: #FFFFFF;
+    padding: 20px 0;
+    text-align: center;
+    font-size: 19px;
+    border: 1px solid #00000020;
+    border-top: none;
+    @include laptop{
+        font-size: 14px;
+        padding: 16px 0; 
+    }
+    &:hover{
+        background-color: #00000020;
+        color: black;
+    }
+}

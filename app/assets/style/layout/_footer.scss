@@ -1,0 +1,180 @@
+footer{
+    background: $red;
+    .container{
+        max-width: 57.8125%;
+        margin: 0 auto;
+        padding-top: 36px;
+        padding-bottom: 27px;
+        color: $white;
+        @include laptop{
+            max-width: 75%;
+        }
+        @include tablet{
+            max-width: 690px;
+            padding: 40px 0;
+        }
+        @include mobileL{
+            max-width: 504px;
+            padding-top: 23px;
+            padding-bottom: 21px;
+        }
+        @include mobile{
+            max-width: 345px;
+        }
+    }
+
+}
+.footerNav{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-bottom: 22px;
+    border-bottom: 1px solid $white;
+    margin-bottom: 24px;
+    @include tablet{
+        padding-bottom: 27px;
+    }
+    @include mobile{
+        flex-direction: row-reverse;
+        padding-bottom: 24px;
+        margin-bottom: 18px;
+    }
+    .menu{
+        width: 464px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: $font-2;
+        margin-bottom: 36px;
+        @include tablet{
+            width: 432px;
+        }
+        @include mobileL{
+            width: 324px;
+        }
+        @include mobile{
+            display: none;
+        }
+        a{
+            color: $white;
+            &:hover{
+                color: $pink;
+            }
+        }
+    }
+    .icon{
+        display: flex;
+        justify-content: space-between;
+        width: 208px;
+        @include tablet{
+            width: 120px;
+        }
+        img{
+            max-width: 48px;
+            @include tablet{
+                max-width: 24px;
+            }
+        }
+        a:hover{
+            border-bottom:  2px solid $pink;
+        }
+    }
+    .contactInfo{
+        width: 100%;
+        @include mobile{
+            width: 204px;
+        }
+        h2{
+            display: flex;
+            &:first-child{
+                margin-bottom: 17px;
+                @include tablet{
+                    margin-bottom: 11px;
+                }
+            }
+            img{
+                width: 44px;
+                @include tablet{
+                    width: 24px;
+                }
+                @include mobile{
+                    width: 20px;
+                }
+            }
+            a{
+                color: $white;
+                font-size: 36px;
+                margin-left: 16px;
+                &:hover{
+                    color: $pink;
+                    
+                }
+                @include tablet{
+                    font-size: $font;
+                    margin-left: 12px;
+                }
+                @include mobile{
+                    font-size: $font-2;
+                    margin-left: 5px;
+                }
+            }
+        }
+
+
+    }
+}
+.copyright{
+    display: flex;
+    justify-content: space-between;
+    @include mobile{
+        display: block;
+    }
+    h3{
+        font-size: $font-2;
+    }
+    a{
+        color: $white;
+        &:hover{
+            color: $pink;
+            border-bottom: 1px solid transparent;
+        }
+    }
+    ul{
+        display: flex;
+        justify-content: space-between;
+        font-size: 14px;
+        @include mobile{
+            display: block;
+        }
+        li{
+            margin-left: 62px;
+            @include tablet{
+                margin: 0 12px;
+            }
+            @include mobile{
+                margin: 0;
+            }
+            img{
+                width: 40px;
+                display: none;
+                @include mobile{
+                    display: block;
+                }
+            }
+            &:nth-child(2){
+                display: flex;
+                justify-content: space-between;
+            }
+        }
+    }
+    .footerLogo{
+        display: flex;
+        align-items: center;
+        a{
+            margin-right: 24px;
+            @include tablet{
+                display: none;
+            }
+        }
+    }
+}

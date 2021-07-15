@@ -1,0 +1,50 @@
+.ask{
+    font-size: 32px;
+    font-weight: bold;
+    margin-top: 64px;
+    margin-bottom: 36px;
+    @include laptop{
+        margin-top: 24px;
+    }
+    @include mobileL{
+        font-size: 20px;
+        margin-top: 8px;
+        margin-bottom: 12px;
+    }
+}
+
+.questionList{
+    margin-bottom: 304px;
+    @include laptop {
+        display: block;
+        margin-bottom: 104px;
+    }
+    @include mobileL{
+        margin-bottom: 56px;
+    }
+    
+    .question{
+        font-size: 20px;
+        font-weight: bold;
+        margin-bottom: 16px;
+        @include mobileL{
+            font-size: 16px;
+            margin-bottom: 8px;
+        }
+    }
+    .ans{
+        word-wrap:break-word;
+        width: fit-content;
+        margin: 0 auto;
+        margin-bottom: 40px;
+        font-weight: bold;
+        @include laptop{
+            width: 91.304%;
+            margin-right: 0;
+        }
+        @include mobileL{
+            width: 100%;
+            margin-bottom: 20px;
+        }
+    }
+}
