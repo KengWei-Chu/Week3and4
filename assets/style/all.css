@@ -98,7 +98,7 @@ header {
     width: 80px;
     height: 50px;
     margin: 29px 0;
-    background-image: url("/assets/images/logo.png");
+    background-image: url("../../images/logo.png");
     background-repeat: no-repeat;
     text-indent: 101%;
     overflow: hidden;
@@ -658,7 +658,7 @@ footer {
 
 .section2 {
   margin-bottom: 80px;
-  background-image: url(/assets/images/bg.png);
+  background-image: url(../images/bg.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -718,7 +718,7 @@ footer {
       height: 472px;
       background-color: rgba(255, 255, 255, 0.5);
       background-blend-mode: overlay;
-      background-image: url(/assets/images/product-8.png);
+      background-image: url(../images/product-8.png);
       background-size: cover;
       background-repeat: no-repeat;
       background-position: center; }
@@ -736,7 +736,7 @@ footer {
       height: 472px;
       background-color: rgba(255, 255, 255, 0.5);
       background-blend-mode: overlay;
-      background-image: url(/assets/images/product-9.png);
+      background-image: url(../images/product-9.png);
       background-size: cover;
       background-repeat: no-repeat;
       background-position: center; }
@@ -1344,7 +1344,7 @@ footer {
         color: #FFFFFF; }
 
 .pageBanner {
-  background-image: url(/assets/images/qa.png);
+  background-image: url(../images/qa.png);
   background-position: center center;
   background-size: cover;
   height: 304px;
