@@ -1,10 +1,26 @@
----
-title: 經典鏡框
-layout: ./app/layout.ejs
-engine: ejs
-current: optical
----
-    <nav>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>經典鏡框</title>
+  <link rel="stylesheet" href="./assets/style/all.css">
+</head>
+
+<body>
+  <header class="header">
+    <h1><a href="index.html" class="logo">Glass</a></h1>
+        <nav>
+            <li><a href="optical.html">系列鏡框</a></li>
+            <li><a href="location.html">門市據點</a></li>
+            <li><a href="blog.html">部落格</a></li>
+            <li><a href="question.html">常見問題</a></li>
+        </nav>
+  </header>
+
+      <nav>
         <ul class="styleNav">
             <li><a href="optical.html" class="navCurrent"><img src="assets/images/icon-diamond-black.svg" alt="icon-diamond-black" >OPTICAL</a></li>
             <li><a href="sunglasses.html"><img src="assets/images/icon-sun-black.svg" alt="icon-sun-black">SUNGLASSES</a></li>
@@ -167,3 +183,42 @@ current: optical
         </nav>  
         
     </main>
+
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footerNav">
+          <ul class="menu">
+              <li><a href="index.html">首頁</a></li>
+              <li><a href="optical.html">系列鏡框</a></li>
+              <li><a href="location.html">門市據點</a></li>
+              <li><a href="blog.html">部落格</a></li>
+              <li><a href="question.html">常見問題</a></li>
+          </ul>
+          <ul class="icon">
+              <li><a href="#"><img src="assets/images/icon-fb.svg" alt="fb"></a></li>
+              <li><a href="#"><img src="assets/images/icon-ig.svg" alt="ig"></a></li>
+              <li><a href="#"><img src="assets/images/icon-line.svg" alt="line"></a></li>
+          </ul>
+          <div class="contactInfo">
+              <h2><img src="assets/images/icon-phone.svg" alt="phone"><a href="#">0800-000-000</a></h2>
+              <h2><img src="assets/images/icon-mail.svg" alt="mail"><a href="#">glasses@business.com</a></h2>
+          </div>
+      </div> 
+      <div class="copyright">
+          <div class="footerLogo">
+              <a href="index.html"><img src="assets/images/logo.png" alt="logo"></a>
+              <h3>Copyright © 2020 Glasses.All rights reserved.</h3>
+          </div>
+          <ul>
+              <li><a href="#">隱私權政策</a></li>
+              <li><a href="#">服務條款</a><a href="index.html"><img src="assets/images/logo.png" alt="logo"></a></li>
+          </ul>
+      </div>
+  </div>
+  </footer>
+  <script src="./assets/js/vendors.js"></script>
+  <script src="./assets/js/all.js"></script>
+</body>
+
+</html>
