@@ -808,6 +808,8 @@ footer {
       width: 25%;
       border: 1px solid #DEE2E6;
       padding-bottom: 16px; }
+      .section3 ul li:not(:last-child) {
+        margin-right: 30px; }
       @media (max-width: 1024px) {
         .section3 ul li {
           width: 50%;
@@ -815,6 +817,7 @@ footer {
       @media (max-width: 576px) {
         .section3 ul li {
           width: 100%;
+          margin: 0;
           margin-bottom: 16px; } }
       .section3 ul li img {
         width: 100%;
