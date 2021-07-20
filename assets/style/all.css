@@ -443,7 +443,6 @@ footer {
 
 .container {
   max-width: 1140px;
-  padding: 0 15px;
   margin: 0 auto; }
   @media (max-width: 992px) {
     .container {
@@ -456,8 +455,7 @@ footer {
       max-width: 540px; } }
   @media (max-width: 375px) {
     .container {
-      max-width: 345px;
-      padding: 0; } }
+      max-width: 345px; } }
 
 .banner {
   background: url(../images/banner.png);
@@ -470,6 +468,7 @@ footer {
       height: 394px; } }
   .banner .container {
     height: 100%;
+    padding: 0 15px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -479,6 +478,9 @@ footer {
     -webkit-box-pack: end;
         -ms-flex-pack: end;
             justify-content: flex-end; }
+    @media (max-width: 576px) {
+      .banner .container {
+        padding: 0; } }
     .banner .container .bannerContent {
       text-align: right;
       color: #650300;
@@ -530,21 +532,26 @@ footer {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    margin: 0 39px auto; }
+    padding: 0 15px; }
+    @media (max-width: 768px) {
+      .article ul {
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between; } }
     @media (max-width: 576px) {
       .article ul {
-        margin: 0 auto; } }
+        padding: 0; } }
     .article ul li {
-      width: 25%; }
+      width: 25%;
+      margin: 0 15px; }
       @media (max-width: 992px) {
         .article ul li {
           width: 50%;
-          margin-bottom: 20px; } }
+          margin: 0;
+          margin-bottom: 20px;
+          padding: 0 45px; } }
       @media (max-width: 768px) {
         .article ul li {
           margin-bottom: 40px; } }
@@ -571,7 +578,8 @@ footer {
             margin-bottom: 16px; } }
       .article ul li h3 {
         font-size: 24px;
-        margin-bottom: 4px; }
+        margin-bottom: 4px;
+        font-weight: bold; }
         @media (max-width: 768px) {
           .article ul li h3 {
             font-size: 20px;
@@ -612,7 +620,8 @@ footer {
       -webkit-box-align: center;
           -ms-flex-align: center;
               align-items: center;
-      margin-bottom: 32px; }
+      margin-bottom: 32px;
+      padding: 0 15px; }
       @media (max-width: 992px) {
         .section1 ul li {
           margin-bottom: 8px; } }
@@ -620,7 +629,8 @@ footer {
         .section1 ul li {
           -webkit-box-pack: center;
               -ms-flex-pack: center;
-                  justify-content: center; } }
+                  justify-content: center;
+          padding: 0; } }
       .section1 ul li .product {
         height: 320px;
         width: 635px;
@@ -707,71 +717,64 @@ footer {
       .section2 h2 {
         font-size: 24px;
         margin-bottom: 20px; } }
-  .section2 ul {
+  .section2 .container {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between; }
+    @media (max-width: 768px) {
+      .section2 .container {
+        padding: 0; } }
     @media (max-width: 576px) {
-      .section2 ul {
+      .section2 .container {
         -ms-flex-wrap: wrap;
             flex-wrap: wrap; } }
-    .section2 ul li {
+    .section2 .container li {
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
       -webkit-box-align: center;
           -ms-flex-align: center;
-              align-items: center; }
-      .section2 ul li a {
+              align-items: center;
+      width: 50%;
+      height: 472px;
+      margin: 0 15px; }
+      @media (max-width: 1024px) {
+        .section2 .container li {
+          height: 278px; } }
+      @media (max-width: 576px) {
+        .section2 .container li {
+          height: 291px;
+          width: 100%;
+          margin: 0;
+          margin-bottom: 16px; } }
+      .section2 .container li a {
         width: 100%;
         font-size: 72px;
         font-weight: bold;
         color: #AA0601;
         text-align: center; }
-        .section2 ul li a:hover {
+        .section2 .container li a:hover {
           color: #650300; }
         @media (max-width: 1024px) {
-          .section2 ul li a {
+          .section2 .container li a {
             font-size: 32px; } }
-    .section2 ul .doublea {
-      width: 48.65%;
-      height: 472px;
+    .section2 .container .doublea {
       background-color: rgba(255, 255, 255, 0.5);
       background-blend-mode: overlay;
       background-image: url(../images/product-8.png);
       background-size: cover;
       background-repeat: no-repeat;
       background-position: center; }
-      @media (max-width: 1024px) {
-        .section2 ul .doublea {
-          width: 45%;
-          height: 278px; } }
-      @media (max-width: 576px) {
-        .section2 ul .doublea {
-          width: 100%;
-          height: 291px;
-          margin-bottom: 16px; } }
-    .section2 ul .youth {
-      width: 48.65%;
-      height: 472px;
+    .section2 .container .youth {
       background-color: rgba(255, 255, 255, 0.5);
       background-blend-mode: overlay;
       background-image: url(../images/product-9.png);
       background-size: cover;
       background-repeat: no-repeat;
       background-position: center; }
-      @media (max-width: 1024px) {
-        .section2 ul .youth {
-          width: 45%;
-          height: 278px; } }
-      @media (max-width: 576px) {
-        .section2 ul .youth {
-          width: 100%;
-          height: 291px;
-          margin-bottom: 16px; } }
 
 .section3 {
   margin-bottom: 64px; }
@@ -795,52 +798,58 @@ footer {
       .section3 h2 {
         font-size: 24px;
         margin-bottom: 20px; } }
-  .section3 ul {
+  .section3 .container {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between; }
-    .section3 ul li {
+    -webkit-box-align: stretch;
+        -ms-flex-align: stretch;
+            align-items: stretch; }
+    @media (max-width: 768px) {
+      .section3 .container {
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap; } }
+    .section3 .container li {
       width: 25%;
-      border: 1px solid #DEE2E6;
-      padding-bottom: 16px; }
-      .section3 ul li:not(:last-child) {
-        margin-right: 30px; }
-      @media (max-width: 1024px) {
-        .section3 ul li {
+      padding-bottom: 16px;
+      padding: 0 15px;
+      margin-bottom: 14px; }
+      @media (max-width: 768px) {
+        .section3 .container li {
           width: 50%;
-          margin-bottom: 28px; } }
-      @media (max-width: 576px) {
-        .section3 ul li {
-          width: 100%;
-          margin: 0;
           margin-bottom: 16px; } }
-      .section3 ul li img {
+      @media (max-width: 576px) {
+        .section3 .container li {
+          width: 100%;
+          padding: 0;
+          margin-bottom: 16px; } }
+      .section3 .container li img {
         width: 100%;
-        margin-bottom: 14px; }
-        @media (max-width: 768px) {
-          .section3 ul li img {
-            margin-bottom: 16px; } }
-      .section3 ul li .recContainer {
-        padding: 0 16px; }
-        .section3 ul li .recContainer h4 {
+        height: 256px;
+        border-radius: 4px 4px 0px 0px; }
+      .section3 .container li .recContainer {
+        border: 1px solid #DEE2E6;
+        -webkit-box-shadow: 0px 2px 6px #00000029;
+                box-shadow: 0px 2px 6px #00000029;
+        padding: 16px;
+        height: 204px;
+        position: relative; }
+        .section3 .container li .recContainer h4 {
           font-size: 14px;
           font-weight: 500;
           margin-bottom: 7px; }
           @media (max-width: 768px) {
-            .section3 ul li .recContainer h4 {
+            .section3 .container li .recContainer h4 {
               margin-bottom: 16px; } }
-        .section3 ul li .recContainer p {
+        .section3 .container li .recContainer p {
           margin-bottom: 10px; }
           @media (max-width: 768px) {
-            .section3 ul li .recContainer p {
+            .section3 .container li .recContainer p {
               margin-bottom: 16px; } }
-        .section3 ul li .recContainer time {
-          color: #707070; }
+        .section3 .container li .recContainer time {
+          color: #707070;
+          position: absolute;
+          bottom: 16px; }
 
 .styleNav {
   margin: 0 auto;
